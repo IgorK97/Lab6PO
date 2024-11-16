@@ -9,40 +9,40 @@ using namespace std;
 class Theme {
 public:
     virtual ~Theme() = default;
-    virtual void renderHeader(string a) const = 0;
-    virtual void renderBody(string a) const = 0;
-    virtual void renderFooter(string a) const = 0;
+    virtual void renderHeader(string a) = 0;
+    virtual void renderBody(string a) = 0;
+    virtual void renderFooter(string a) = 0;
 };
 
 class LightTheme : public Theme {
 public:
-    void renderHeader(string a) const override {
+    void renderHeader(string a) override {
         cout << a << " (заголовок в светлой теме)" << endl;
     }
-    void renderBody(string a) const override {
+    void renderBody(string a) override {
         cout << "-----------------" << endl;
         cout << a << " (в светлой теме)" << endl;
         cout << "-----------------" << endl;
 
     }
-    void renderFooter(string a) const override {
+    void renderFooter(string a) override {
         cout << a << " (в светлой теме)" << endl;
     }
 };
 
 class DarkTheme : public Theme {
 public:
-    void renderHeader(string a) const override {
+    void renderHeader(string a) override {
         cout << a << " (заголовок в темной теме)" << endl;
 
     }
-    void renderBody(string a) const override {
+    void renderBody(string a) override {
         cout << "-----------------" << endl;
         cout << a << " (в темной теме)" << endl;
         cout << "-----------------" << endl;
 
     }
-    void renderFooter(string a) const override {
+    void renderFooter(string a) override {
         cout << a << " (в темной теме)" << endl;
     }
 };
@@ -59,7 +59,7 @@ public:
         this->footer = footer;
         this->body = body;
     }
-    virtual void openPage() const {
+    virtual void openPage() {
         theme->renderHeader(header);
         theme->renderBody(body);
         theme->renderFooter(footer);
@@ -67,18 +67,18 @@ public:
     void setTheme(Theme* newTheme) {
         theme = move(newTheme);
     }
-    virtual void closePage() const = 0;
+    virtual void closePage() = 0;
 };
 
 class HomePage : public WebPage {
 public:
     HomePage(Theme* theme, string header, string body, string footer) 
         : WebPage(theme, header, body, footer) {}
-    void openPage() const override {
+    void openPage() override {
         cout << "Открытие главной страницы: " << endl;
         WebPage::openPage();
     }
-    void closePage() const override {
+    void closePage() override {
         cout << "Закрываем главную страницу" << endl;
     }
 };
@@ -87,11 +87,11 @@ class AboutWebSite : public WebPage {
 public:
     AboutWebSite(Theme* theme, string header, string body, string footer) 
         : WebPage(theme, header, body, footer) {}
-    void openPage() const override {
+    void openPage() override {
         cout << "Открытие страницы о сайте: " << endl;
         WebPage::openPage();
     }
-    void closePage() const override {
+    void closePage() override {
         cout << "Закрываем страницу о сайте" << endl;
     }
 };

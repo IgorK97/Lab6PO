@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{6D228FE4-3495-4355-BDCF-2AB39F1EAA2E}|Lab6PO\\Lab6PO.vcxproj|C:\\Users\\Igor\\source\\repos\\Lab6PO\\Lab6PO\\Lab6PO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6D228FE4-3495-4355-BDCF-2AB39F1EAA2E}|Lab6PO\\Lab6PO.vcxproj|solutionrelative:Lab6PO\\Lab6PO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D228FE4-3495-4355-BDCF-2AB39F1EAA2E}|Lab6PO\\Lab6PO.vcxproj|C:\\Users\\Igor\\source\\repos\\Lab6PO\\Lab6PO\\ClassDiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{6D228FE4-3495-4355-BDCF-2AB39F1EAA2E}|Lab6PO\\Lab6PO.vcxproj|solutionrelative:Lab6PO\\ClassDiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -23,6 +27,18 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClassDiagram.cd",
+              "DocumentMoniker": "C:\\Users\\Igor\\source\\repos\\Lab6PO\\Lab6PO\\ClassDiagram.cd",
+              "RelativeDocumentMoniker": "Lab6PO\\ClassDiagram.cd",
+              "ToolTip": "C:\\Users\\Igor\\source\\repos\\Lab6PO\\Lab6PO\\ClassDiagram.cd",
+              "RelativeToolTip": "Lab6PO\\ClassDiagram.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2024-11-16T14:27:32.814Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -34,9 +50,9 @@
               "Title": "Lab6PO.cpp",
               "DocumentMoniker": "C:\\Users\\Igor\\source\\repos\\Lab6PO\\Lab6PO\\Lab6PO.cpp",
               "RelativeDocumentMoniker": "Lab6PO\\Lab6PO.cpp",
-              "ToolTip": "C:\\Users\\Igor\\source\\repos\\Lab6PO\\Lab6PO\\Lab6PO.cpp*",
-              "RelativeToolTip": "Lab6PO\\Lab6PO.cpp*",
-              "ViewState": "AgIAAGwAAAAAAAAAAADwv4cAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Igor\\source\\repos\\Lab6PO\\Lab6PO\\Lab6PO.cpp",
+              "RelativeToolTip": "Lab6PO\\Lab6PO.cpp",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-16T13:35:35.14Z",
               "EditorCaption": ""
