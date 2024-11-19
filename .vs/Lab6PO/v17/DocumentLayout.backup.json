@@ -37,7 +37,8 @@
               "ToolTip": "C:\\Users\\Igor\\source\\repos\\Lab6PO\\Lab6PO\\ClassDiagram.cd",
               "RelativeToolTip": "Lab6PO\\ClassDiagram.cd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2024-11-16T14:27:32.814Z"
+              "WhenOpened": "2024-11-16T14:27:32.814Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -45,9 +46,9 @@
               "Title": "Lab6PO.cpp",
               "DocumentMoniker": "C:\\Users\\Igor\\source\\repos\\Lab6PO\\Lab6PO\\Lab6PO.cpp",
               "RelativeDocumentMoniker": "Lab6PO\\Lab6PO.cpp",
-              "ToolTip": "C:\\Users\\Igor\\source\\repos\\Lab6PO\\Lab6PO\\Lab6PO.cpp*",
-              "RelativeToolTip": "Lab6PO\\Lab6PO.cpp*",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEMAAAAhAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Igor\\source\\repos\\Lab6PO\\Lab6PO\\Lab6PO.cpp",
+              "RelativeToolTip": "Lab6PO\\Lab6PO.cpp",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-16T13:35:35.14Z",
               "EditorCaption": ""
