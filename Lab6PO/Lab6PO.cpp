@@ -9,41 +9,37 @@ using namespace std;
 class Theme {
 public:
     virtual ~Theme() = default;
-    virtual void renderHeader(string a) = 0;
-    virtual void renderBody(string a) = 0;
-    virtual void renderFooter(string a) = 0;
+    virtual string renderHeader() = 0;
+    virtual string renderBody() = 0;
+    virtual string renderFooter() = 0;
 };
 
 class LightTheme : public Theme {
 public:
-    void renderHeader(string a) override {
-        cout << a << " (заголовок в светлой теме)" << endl;
+    string renderHeader() override {
+        return " (стиль заголовка в светлой теме)";
     }
-    void renderBody(string a) override {
-        cout << "-----------------" << endl;
-        cout << a << " (в светлой теме)" << endl;
-        cout << "-----------------" << endl;
+    string renderBody() override {
+        return " (стиль тела в светлой теме)";
 
     }
-    void renderFooter(string a) override {
-        cout << a << " (в светлой теме)" << endl;
+    string renderFooter() override {
+        return " (стиль подвала в светлой теме)";
     }
 };
 
 class DarkTheme : public Theme {
 public:
-    void renderHeader(string a) override {
-        cout << a << " (заголовок в темной теме)" << endl;
+    string renderHeader() override {
+        return " (стиль заголовка в темной теме)";
 
     }
-    void renderBody(string a) override {
-        cout << "-----------------" << endl;
-        cout << a << " (в темной теме)" << endl;
-        cout << "-----------------" << endl;
+    string renderBody() override {
+        return " (стиль тела в темной теме)";
 
     }
-    void renderFooter(string a) override {
-        cout << a << " (в темной теме)" << endl;
+    string renderFooter() override {
+        return " (стиль подвала в темной теме)";
     }
 };
 
@@ -60,12 +56,17 @@ public:
         this->body = body;
     }
     virtual void openPage() {
-        theme->renderHeader(header);
-        theme->renderBody(body);
-        theme->renderFooter(footer);
+        cout << header << theme->renderHeader() << endl;
+        cout << "-----------------" << endl;
+
+        cout << body << theme->renderBody() << endl;
+        cout << "-----------------" << endl;
+
+        cout << footer << theme->renderFooter() << endl;
     }
     void setTheme(Theme* newTheme) {
-        theme = move(newTheme);
+        //theme = move(newTheme);
+        theme = newTheme;
     }
     virtual void closePage() = 0;
 };
